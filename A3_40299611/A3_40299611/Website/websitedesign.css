@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+    width: 205px;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar a{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color:white;
+    display: block;
+}
+.navbar a:hover:not(.active){
+    background-color: #575757;
+    color: goldenrod;
+    width: 205px;
+}
+.active{
+    background-color: goldenrod;
+    width: 205px;
+}
+.active a:hover{
+    background-color: goldenrod;
+}
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 81px;
+    position: absolute;
+    top: 0;
+    right: 0;   
+}
+.main {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+}
+.footer {
+    background-color: #d7d7d7;
+    padding: 10px;
+    bottom: 0;          
+}
+.footer a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #1f1839;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .navbar a {
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .navbar,.navbar a:hover:not(.active),.active,.content {
+        width: 100%;
+    }
+    .logo {
+        width: 50px;
+        position: absolute;
+        top: 0px;
+        right: 0px;        
+    }
+    .header, .main, .footer {
+        padding: 10px;
+    }
+}
