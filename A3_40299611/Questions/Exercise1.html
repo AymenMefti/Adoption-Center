@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <h1>Exercise 1</h1>
+
+    <!-- Form to find summation -->
+    <h2>Find Summation</h2>
+    <form method="post" action="/findSummation">
+        <label for="number">Enter a number:</label>
+        <input type="number" id="number" name="number" required>
+        <button type="submit">Find Summation</button>
+    </form>
+    
+
+    <!-- Form to uppercase first and last characters -->
+    <h2>Uppercase First and Last Characters</h2>
+    <form method="post" action="/uppercaseFirstandLast">
+        <label for="string">Enter a sentence:</label>
+        <input type="text" id="string" name="string" required>
+        <button type="submit">Uppercase First and Last</button>
+    </form>
+    
+
+    <!-- Form to find average and median -->
+    <h2>Find Average and Median</h2>
+    <form method="post" action="/findAverageAndMedian">
+        <label for="array">Enter numbers separated by commas:</label>
+        <input type="text" id="array" name="array" required>
+        <button type="submit">Find Average and Median</button>
+    </form>
+    
+
+    <!-- Form to find first 4 digits -->
+    <h2>Find First 4 Digits</h2>
+    <form method="post" action="/find4Digits">
+        <label for="stringDigits">Enter a string with digits:</label>
+        <input type="text" id="stringDigits" name="stringDigits" required>
+        <button type="submit">Find 4 Digits</button>
+    </form>
+
+</body>
+</html>
